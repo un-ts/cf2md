@@ -2,7 +2,7 @@
 
 [![GitHub Actions](https://github.com/rx-ts/cf2md/workflows/CI/badge.svg)](https://github.com/rx-ts/cf2md/actions/workflows/ci.yml)
 [![Codecov](https://img.shields.io/codecov/c/github/rx-ts/cf2md.svg)](https://codecov.io/gh/rx-ts/cf2md)
-[![Codacy Grade](https://img.shields.io/codacy/grade/f2cec506ecf446aca3769c402e0a104e)](https://www.codacy.com/gh/rx-ts/cf2md)
+[![Codacy Grade](https://img.shields.io/codacy/grade/5f6d6b90f972435393fb8c2eb49deafc)](https://www.codacy.com/gh/rx-ts/cf2md)
 [![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Frx-ts%2Fcf2md%2Fmain%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
 [![npm](https://img.shields.io/npm/v/cf2md.svg)](https://www.npmjs.com/package/cf2md)
 [![GitHub Release](https://img.shields.io/github/release/rx-ts/cf2md)](https://github.com/rx-ts/cf2md/releases)
