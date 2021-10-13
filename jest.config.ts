@@ -1,4 +1,4 @@
-import { Config } from '@jest/types'
+import type { Config } from '@jest/types'
 
 const config: Config.InitialOptions = {
   preset: 'ts-jest',
@@ -7,7 +7,7 @@ const config: Config.InitialOptions = {
   extensionsToTreatAsEsm: ['.ts'],
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1',
-    '^lib-boilerplate$': '<rootDir>/src',
+    '^cf2md$': '<rootDir>/src',
   },
   globals: {
     'ts-jest': {

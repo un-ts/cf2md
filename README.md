@@ -1,15 +1,15 @@
-# lib-boilerplate
+# cf2md
 
-[![GitHub Actions](https://github.com/rx-ts/lib-boilerplate/workflows/CI/badge.svg)](https://github.com/rx-ts/lib-boilerplate/actions/workflows/ci.yml)
-[![Codecov](https://img.shields.io/codecov/c/github/rx-ts/lib-boilerplate.svg)](https://codecov.io/gh/rx-ts/lib-boilerplate)
-[![Codacy Grade](https://img.shields.io/codacy/grade/f2cec506ecf446aca3769c402e0a104e)](https://www.codacy.com/gh/rx-ts/lib-boilerplate)
-[![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Frx-ts%2Flib-boilerplate%2Fmain%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
-[![npm](https://img.shields.io/npm/v/lib-boilerplate.svg)](https://www.npmjs.com/package/lib-boilerplate)
-[![GitHub Release](https://img.shields.io/github/release/rx-ts/lib-boilerplate)](https://github.com/rx-ts/lib-boilerplate/releases)
+[![GitHub Actions](https://github.com/rx-ts/cf2md/workflows/CI/badge.svg)](https://github.com/rx-ts/cf2md/actions/workflows/ci.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/rx-ts/cf2md.svg)](https://codecov.io/gh/rx-ts/cf2md)
+[![Codacy Grade](https://img.shields.io/codacy/grade/5f6d6b90f972435393fb8c2eb49deafc)](https://www.codacy.com/gh/rx-ts/cf2md)
+[![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Frx-ts%2Fcf2md%2Fmain%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
+[![npm](https://img.shields.io/npm/v/cf2md.svg)](https://www.npmjs.com/package/cf2md)
+[![GitHub Release](https://img.shields.io/github/release/rx-ts/cf2md)](https://github.com/rx-ts/cf2md/releases)
 
-[![David Peer](https://img.shields.io/david/peer/rx-ts/lib-boilerplate.svg)](https://david-dm.org/rx-ts/lib-boilerplate?type=peer)
-[![David](https://img.shields.io/david/rx-ts/lib-boilerplate.svg)](https://david-dm.org/rx-ts/lib-boilerplate)
-[![David Dev](https://img.shields.io/david/dev/rx-ts/lib-boilerplate.svg)](https://david-dm.org/rx-ts/lib-boilerplate?type=dev)
+[![David Peer](https://img.shields.io/david/peer/rx-ts/cf2md.svg)](https://david-dm.org/rx-ts/cf2md?type=peer)
+[![David](https://img.shields.io/david/rx-ts/cf2md.svg)](https://david-dm.org/rx-ts/cf2md)
+[![David Dev](https://img.shields.io/david/dev/rx-ts/cf2md.svg)](https://david-dm.org/rx-ts/cf2md?type=dev)
 
 [![Conventional Commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
@@ -33,18 +33,18 @@ A simple library boilerplate.
 
 ```sh
 # yarn
-yarn add lib-boilerplate
+yarn add cf2md
 
 # npm
-npm i lib-boilerplate
+npm i cf2md
 ```
 
 ### API
 
 ```js
-import echo from 'lib-boilerplate'
+import { cf2md } from 'cf2md'
 
-echo()
+const markdown = cf2md(html)
 ```
 
 ## Changelog
