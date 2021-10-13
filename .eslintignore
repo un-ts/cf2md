@@ -1,4 +1,5 @@
 coverage
 lib
+test/fixtures
 CHANGELOG.md
 !/.*.js
