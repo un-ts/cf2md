@@ -115,9 +115,4 @@ const processor = unified()
   .freeze()
 
 export const cf2md = (input: string, encoding?: BufferEncoding | undefined) =>
-  processor.process(input).then(vfile =>
-    vfile.toString(
-      // @ts-expect-error - https://github.com/vfile/vfile/pull/66
-      encoding,
-    ),
-  )
+  processor.process(input).then(vfile => vfile.toString(encoding))
