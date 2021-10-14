@@ -13,17 +13,20 @@ describe('fixtures', () => {
     if (!fixture.endsWith('.html')) {
       continue
     }
+
+    const fixtureFile = path.resolve(fixturesDir, fixture)
+
     it(`${fixture} should work as expected`, async () => {
-      const input = await fs.promises.readFile(
-        path.resolve(fixturesDir, fixture),
-        'utf8',
-      )
+      const input = await fs.promises.readFile(fixtureFile, 'utf8')
       const output = await cf2md(input)
       expect(output).toMatchSnapshot()
-      await fs.promises.writeFile(
-        path.resolve(fixturesDir, fixture.replace('.html', '.md')),
-        output,
-      )
+    })
+
+    it(`${fixture} stream should work as expected`, () => {
+      const input = fs.createReadStream(fixtureFile)
+      const output = cf2md(input)
+      expect(output).toBeTruthy()
+      output.pipe(fs.createWriteStream(fixtureFile.replace(/\.html$/, '.md')))
     })
   }
 })

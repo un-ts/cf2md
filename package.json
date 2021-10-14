@@ -9,6 +9,9 @@
   "engines": {
     "node": ">=12"
   },
+  "bin": {
+    "cf2md": "./lib/cli.js"
+  },
   "exports": {
     "import": "./lib/index.js",
     "require": "./lib/index.cjs"
@@ -32,21 +35,23 @@
     "typecov": "type-coverage"
   },
   "dependencies": {
+    "commander": "^8.2.0",
     "hast-util-is-element": "^2.1.1",
     "hast-util-to-mdast": "^8.2.1",
     "rehype-parse": "^8.0.3",
     "rehype-remark": "^9.0.0",
     "remark-directive": "^2.0.0",
     "remark-gfm": "^3.0.0",
-    "remark-stringify": "^10.0.0",
-    "unified": "^10.1.0"
+    "remark-stringify": "^10.0.1",
+    "unified": "^10.1.0",
+    "unified-stream": "^2.0.0"
   },
   "devDependencies": {
     "@1stg/lib-config": "^4.1.2",
     "@changesets/changelog-github": "^0.4.1",
     "@changesets/cli": "^2.17.0",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.10.5",
+    "@types/node": "^16.10.9",
     "ts-jest": "^27.0.5",
     "type-coverage": "^2.18.2",
     "typescript": "^4.4.4"
