@@ -14,7 +14,7 @@
 
 # 宏：提示
 
-:::alert{type=\\"tip\\"}
+:::alert{type="tip"}
 请确保磁盘上没有重要数据，或者已完成相关备份。
 :::
 
@@ -22,21 +22,21 @@
 
 # 宏：代码块
 
-\`\`\`java
+```java
 cp /etc/kubernetes/manifests/kube-apiserver.yaml ./kube-apiserver.yaml_backup
-cp /etc/kubernetes/manifests/kube-scheduler.yaml ./kube-scheduler.yaml_backup
-\`\`\`
+  cp /etc/kubernetes/manifests/kube-scheduler.yaml ./kube-scheduler.yaml_backup
+```
 
-\`\`\`java expandable
+```java expandable
 cp /etc/kubernetes/manifests/kube-apiserver.yaml ./kube-apiserver.yaml_backup
-cp /etc/kubernetes/manifests/kube-scheduler.yaml ./kube-scheduler.yaml_backup
-\`\`\`
+  cp /etc/kubernetes/manifests/kube-scheduler.yaml ./kube-scheduler.yaml_backup
+```
 
 # 宏：内容报告标签
 
-| 标题                                                                             | 创建者                      | 已修改         |   |
-| ------------------------------------------------------------------------------ | ------------------------ | ----------- | - |
-| [Kube-ovn 网络组件 Underlay 模式网络隔离操作手册-实验环境](/pages/viewpage.action?pageId=950277) | [admin](/display/~admin) | 九月 24, 2021 |   |
+| 标题                                                                             | 创建者                       | 已修改         |   |
+| ------------------------------------------------------------------------------ | ------------------------- | ----------- | - |
+| [Kube-ovn 网络组件 Underlay 模式网络隔离操作手册-实验环境](/pages/viewpage.action?pageId=950277) | [admin](/display/\~admin) | 九月 24, 2021 |   |
 
 <br>
 
@@ -78,4 +78,4 @@ cp /etc/kubernetes/manifests/kube-scheduler.yaml ./kube-scheduler.yaml_backup
 
 <br>
 
-\\\\-end-
+\-end-

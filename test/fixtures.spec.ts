@@ -18,7 +18,12 @@ describe('fixtures', () => {
         path.resolve(fixturesDir, fixture),
         'utf8',
       )
-      expect(await cf2md(input)).toMatchSnapshot()
+      const output = await cf2md(input)
+      expect(output).toMatchSnapshot()
+      await fs.promises.writeFile(
+        path.resolve(fixturesDir, fixture.replace('.html', '.md')),
+        output,
+      )
     })
   }
 })
