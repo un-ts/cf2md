@@ -9,6 +9,8 @@ import remarkDirective from 'remark-directive'
 import remarkGfm from 'remark-gfm'
 import remarkStringify from 'remark-stringify'
 import { unified } from 'unified'
+import type { MinimalDuplex } from 'unified-stream'
+import { stream } from 'unified-stream'
 
 const getClassList = (node: Element) =>
   node.properties?.className as string[] | undefined
@@ -114,5 +116,18 @@ const processor = unified()
   })
   .freeze()
 
-export const cf2md = (input: string, encoding?: BufferEncoding | undefined) =>
-  processor.process(input).then(vfile => vfile.toString(encoding))
+export function cf2md(
+  input: string,
+  encoding?: BufferEncoding | undefined,
+): Promise<string>
+export function cf2md(input: NodeJS.ReadableStream): MinimalDuplex
+export function cf2md(
+  input: NodeJS.ReadableStream | string,
+  encoding?: BufferEncoding | undefined,
+) {
+  if (typeof input === 'string') {
+    return processor.process(input).then(vfile => vfile.toString(encoding))
+  }
+
+  return input.pipe(stream(processor()))
+}

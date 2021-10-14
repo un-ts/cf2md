@@ -23,6 +23,7 @@ A simple library boilerplate.
 
 - [Usage](#usage)
   - [Install](#install)
+  - [CLI](#cli)
   - [API](#api)
 - [Changelog](#changelog)
 - [License](#license)
@@ -32,19 +33,42 @@ A simple library boilerplate.
 ### Install
 
 ```sh
-# yarn
-yarn add cf2md
-
 # npm
-npm i cf2md
+npm i -g cf2md
+
+# pnpm
+pnpm i -g cf2md
+
+# yarn
+yarn global add cf2md
+```
+
+### CLI
+
+```plain
+Usage: cf2md [options] [input]
+
+Arguments:
+  input                Input HTML codes
+
+Options:
+  -V, --version        output the version number
+  -i, --input <path>   Input file
+  -o, --output <path>  Output file
+  -h, --help           display help for command
 ```
 
 ### API
 
 ```js
+import fs from 'fs'
 import { cf2md } from 'cf2md'
 
+// string
 const markdown = cf2md(html)
+
+// stream
+cf2md(fs.createReadStream(htmlFile)).pipe(fs.createWriteStream(mdFile))
 ```
 
 ## Changelog
