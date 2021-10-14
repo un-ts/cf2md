@@ -17,7 +17,7 @@
 [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![changesets](https://img.shields.io/badge/maintained%20with-changesets-176de3.svg)](https://github.com/atlassian/changesets)
 
-A simple library boilerplate.
+Transform from confluence flavored HTML to Markdown with enhanced features.
 
 ## TOC <!-- omit in toc -->
 
@@ -53,8 +53,8 @@ Arguments:
 
 Options:
   -V, --version        output the version number
-  -i, --input <path>   Input file
-  -o, --output <path>  Output file
+  -i, --input <path>   Input HTML file
+  -o, --output <path>  Output Markdown file
   -h, --help           display help for command
 ```
 

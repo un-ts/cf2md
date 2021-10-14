@@ -2,7 +2,7 @@
   "name": "cf2md",
   "version": "0.1.0",
   "type": "module",
-  "description": "A simple library boilerplate.",
+  "description": "Transform from confluence flavored HTML to Markdown with enhanced features.",
   "repository": "git+https://github.com/rx-ts/cf2md.git",
   "author": "JounQin <admin@1stg.me>",
   "license": "MIT",
@@ -19,7 +19,7 @@
   "types": "lib",
   "files": [
     "lib",
-    "!*.tsbuildinfo"
+    "!**/*.tsbuildinfo"
   ],
   "scripts": {
     "build": "run-p build:*",

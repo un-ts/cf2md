@@ -25,8 +25,8 @@ const { input, output } = program
     ).version,
   )
   .argument('[input]', 'Input HTML codes')
-  .option('-i, --input <path>', 'Input file')
-  .option('-o, --output <path>', 'Output file')
+  .option('-i, --input <path>', 'Input HTML file')
+  .option('-o, --output <path>', 'Output Markdown file')
   .parse(process.argv)
   .opts<Cf2MdOptions>()
 
