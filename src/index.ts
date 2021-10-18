@@ -1,7 +1,7 @@
-import type { Content, Element } from 'hast'
+import type { Element } from 'hast'
 import { isElement } from 'hast-util-is-element'
-import { all } from 'hast-util-to-mdast'
-import { code } from 'hast-util-to-mdast/lib/handlers/code.js'
+import { all, defaultHandlers } from 'hast-util-to-mdast'
+import type { Paragraph, Strong, Text } from 'mdast'
 import type { BlockContent, ContainerDirective } from 'mdast-util-directive'
 import rehypeParse from 'rehype-parse'
 import rehypeRemark from 'rehype-remark'
@@ -21,9 +21,6 @@ const processor = unified()
   .use(remarkGfm)
   .use(rehypeRemark, {
     handlers: {
-      br(h, node: Content) {
-        return h(node, 'html', '<br>')
-      },
       div(h, node: Element) {
         const classList = getClassList(node)
 
@@ -60,6 +57,23 @@ const processor = unified()
           }
         }
 
+        if (classList?.includes('panel') && !classList.includes('code')) {
+          const containerDirective: ContainerDirective = {
+            type: 'containerDirective',
+            name: 'panel',
+            attributes: {
+              title: nodes
+                .find((node): node is Strong => node.type === 'strong')!
+                .children.find((node): node is Text => node.type === 'text')!
+                .value,
+            },
+            children: nodes.filter(
+              (node): node is Paragraph => node.type === 'paragraph',
+            ),
+          }
+          return containerDirective
+        }
+
         return nodes
       },
       pre(h, node: Element, parent) {
@@ -81,8 +95,7 @@ const processor = unified()
           }
         }
 
-        // `h.handlers.code` is actually `inlineCode`
-        const codeNode = code(h, {
+        const codeNode = defaultHandlers.pre(h, {
           ...node,
           children: node.children.map(child =>
             child.type === 'text'
