@@ -1,5 +1,11 @@
 # cf2md
 
+## 0.3.0
+
+### Minor Changes
+
+- [#6](https://github.com/rx-ts/cf2md/pull/6) [`99eb3f9`](https://github.com/rx-ts/cf2md/commit/99eb3f92d94a675363ada11ed9ad1cafee3d44b0) Thanks [@JounQin](https://github.com/JounQin)! - feat: support panel with title correctly
+
 ## 0.2.0
 
 ### Minor Changes
