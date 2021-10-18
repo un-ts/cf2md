@@ -39,9 +39,8 @@
   "dependencies": {
     "commander": "^8.2.0",
     "hast-util-is-element": "^2.1.1",
-    "hast-util-to-mdast": "^8.3.0",
     "rehype-parse": "^8.0.3",
-    "rehype-remark": "^9.0.0",
+    "rehype-remark": "^9.1.0",
     "remark-directive": "^2.0.0",
     "remark-gfm": "^3.0.0",
     "remark-stringify": "^10.0.1",
