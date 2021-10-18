@@ -1,5 +1,3 @@
-<br>
-
 # 宏：目录
 
 ## 二级标题
@@ -17,8 +15,6 @@
 :::alert{type="tip"}
 请确保磁盘上没有重要数据，或者已完成相关备份。
 :::
-
-<br>
 
 # 宏：代码块
 
@@ -38,21 +34,15 @@ cp /etc/kubernetes/manifests/kube-apiserver.yaml ./kube-apiserver.yaml_backup
 | ------------------------------------------------------------------------------ | ------------------------- | ----------- | - |
 | [Kube-ovn 网络组件 Underlay 模式网络隔离操作手册-实验环境](/pages/viewpage.action?pageId=950277) | [admin](/display/\~admin) | 九月 24, 2021 |   |
 
-<br>
-
 # 宏：面板
 
-**面板标题**
-
+:::panel{title="面板标题"}
 这是面板宏测试
-
-<br>
+:::
 
 # 宏：页面属性
 
 这是页面属性
-
-<br>
 
 # 宏：Markdown
 
@@ -73,9 +63,5 @@ cp /etc/kubernetes/manifests/kube-apiserver.yaml ./kube-apiserver.yaml_backup
 别说做决定，连心事都别想。我发现同一件事，晚上思考很容易钻牛角尖，清晨醒来，顿觉事情根本没那么糟糕。
 
 经验是……
-
-<br>
-
-<br>
 
 \-end-
