@@ -1,5 +1,11 @@
 # cf2md
 
+## 0.3.1
+
+### Patch Changes
+
+- [#8](https://github.com/rx-ts/cf2md/pull/8) [`76752f1`](https://github.com/rx-ts/cf2md/commit/76752f1a51b944f452ac1402c308ed6b4ee358a1) Thanks [@JounQin](https://github.com/JounQin)! - fix(deps): upgrade rehype-remark to remove hast-util-to-mdast
+
 ## 0.3.0
 
 ### Minor Changes
