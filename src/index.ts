@@ -45,7 +45,7 @@ const processor = unified()
             }
           }
           if (type) {
-            const containerDirective: ContainerDirective = {
+            const alert: ContainerDirective = {
               type: 'containerDirective',
               name: 'alert',
               attributes: {
@@ -53,12 +53,12 @@ const processor = unified()
               },
               children: nodes as BlockContent[],
             }
-            return containerDirective
+            return alert
           }
         }
 
         if (classList?.includes('panel') && !classList.includes('code')) {
-          const containerDirective: ContainerDirective = {
+          const panel: ContainerDirective = {
             type: 'containerDirective',
             name: 'panel',
             attributes: {
@@ -71,7 +71,7 @@ const processor = unified()
               (node): node is Paragraph => node.type === 'paragraph',
             ),
           }
-          return containerDirective
+          return panel
         }
 
         return nodes
