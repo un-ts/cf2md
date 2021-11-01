@@ -14,7 +14,7 @@ specifiers:
   remark-gfm: ^3.0.0
   remark-stringify: ^10.0.1
   ts-jest: ^27.0.7
-  type-coverage: ^2.18.2
+  type-coverage: ^2.18.3
   typescript: ^4.4.4
   unified: ^10.1.0
   unified-stream: ^2.0.0
@@ -37,7 +37,7 @@ devDependencies:
   '@types/jest': 27.0.2
   '@types/node': 16.11.1
   ts-jest: 27.0.7_955fd824a1b675c0ebb6b183dba9cf6b
-  type-coverage: 2.18.2_typescript@4.4.4
+  type-coverage: 2.18.3_typescript@4.4.4
   typescript: 4.4.4
 
 packages:
@@ -10851,8 +10851,8 @@ packages:
       prelude-ls: 1.2.1
     dev: true
 
-  /type-coverage-core/2.18.2_typescript@4.4.4:
-    resolution: {integrity: sha512-cyQKmRoh+7gbIvXnPg5F6xWTdZ2+0R0tqgdJaIImqDs1Gih6fBeIDhYblS25TkR2ZmacmYnG33nAvQUe89zwnA==}
+  /type-coverage-core/2.18.3_typescript@4.4.4:
+    resolution: {integrity: sha512-abuqXETGrArQJ8jAhW+LI/8nPZMUSItJMui+dk0DpexPye/nmycy20Ww4hXorFfeEwbvzILaJyu+0LNO0Zq0BQ==}
     peerDependencies:
       typescript: 2 || 3 || 4
     dependencies:
@@ -10864,12 +10864,12 @@ packages:
       typescript: 4.4.4
     dev: true
 
-  /type-coverage/2.18.2_typescript@4.4.4:
-    resolution: {integrity: sha512-1CumIpMrwTtp0asIBoYfvZlaEgxlIwGhIs/UoKuKOIIsNWnXw4iThg+LyEGMLfNJNsCEzheeZR4Xx9F8QdPXPg==}
+  /type-coverage/2.18.3_typescript@4.4.4:
+    resolution: {integrity: sha512-wO3CNAPJdnWkJwmp486tZRcH74MUyN9gHwwOPfPlFQuZXiqjE6JUYMGVFbFh6gYGlZWrODEhmKpGwdyplnQOow==}
     hasBin: true
     dependencies:
       minimist: 1.2.5
-      type-coverage-core: 2.18.2_typescript@4.4.4
+      type-coverage-core: 2.18.3_typescript@4.4.4
     transitivePeerDependencies:
       - typescript
     dev: true
