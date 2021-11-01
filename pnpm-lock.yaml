@@ -10,7 +10,7 @@ specifiers:
   hast-util-is-element: ^2.1.1
   rehype-parse: ^8.0.3
   rehype-remark: ^9.1.0
-  remark-directive: ^2.0.0
+  remark-directive: ^2.0.1
   remark-gfm: ^3.0.0
   remark-stringify: ^10.0.1
   ts-jest: ^27.0.7
@@ -24,7 +24,7 @@ dependencies:
   hast-util-is-element: 2.1.1
   rehype-parse: 8.0.3
   rehype-remark: 9.1.0
-  remark-directive: 2.0.0
+  remark-directive: 2.0.1
   remark-gfm: 3.0.0
   remark-stringify: 10.0.1
   unified: 10.1.0
@@ -9263,8 +9263,8 @@ packages:
       unified: 10.1.0
     dev: false
 
-  /remark-directive/2.0.0:
-    resolution: {integrity: sha512-1AMpSzp/NsvursAORfucrP+FeXJOm5kgA5Au8nID45zYNKAmI7PtI8ywExXl2U2pJlG4KtPyhA75flPRZz5K4A==}
+  /remark-directive/2.0.1:
+    resolution: {integrity: sha512-oosbsUAkU/qmUE78anLaJePnPis4ihsE7Agp0T/oqTzvTea8pOiaYEtfInU/+xMOVTS9PN5AhGOiaIVe4GD8gw==}
     dependencies:
       '@types/mdast': 3.0.10
       mdast-util-directive: 2.1.1
