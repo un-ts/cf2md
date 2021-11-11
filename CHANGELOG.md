@@ -1,5 +1,11 @@
 # cf2md
 
+## 0.3.2
+
+### Patch Changes
+
+- [#12](https://github.com/rx-ts/cf2md/pull/12) [`adfaf19`](https://github.com/rx-ts/cf2md/commit/adfaf1931c3a7d6c776de426b3fe4172ffcebd12) Thanks [@JounQin](https://github.com/JounQin)! - fix: add missing node bin hashbang
+
 ## 0.3.1
 
 ### Patch Changes
