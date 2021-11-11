@@ -1,6 +1,6 @@
 {
   "name": "cf2md",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "type": "module",
   "description": "Transform from confluence flavored HTML to Markdown with enhanced features.",
   "repository": "git+https://github.com/rx-ts/cf2md.git",
