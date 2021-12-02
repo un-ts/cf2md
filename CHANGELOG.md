@@ -1,5 +1,11 @@
 # cf2md
 
+## 0.3.3
+
+### Patch Changes
+
+- [`d699bf0`](https://github.com/rx-ts/cf2md/commit/d699bf000f82fd3b2af3166af8b6331d586f527b) Thanks [@JounQin](https://github.com/JounQin)! - fix: panel could have no title
+
 ## 0.3.2
 
 ### Patch Changes
