@@ -43,19 +43,19 @@
     "rehype-remark": "^9.1.0",
     "remark-directive": "^2.0.1",
     "remark-gfm": "^3.0.1",
-    "remark-stringify": "^10.0.1",
-    "unified": "^10.1.0",
+    "remark-stringify": "^10.0.2",
+    "unified": "^10.1.1",
     "unified-stream": "^2.0.0"
   },
   "devDependencies": {
     "@1stg/lib-config": "^4.1.2",
-    "@changesets/changelog-github": "^0.4.1",
-    "@changesets/cli": "^2.18.0",
-    "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.7",
+    "@changesets/changelog-github": "^0.4.2",
+    "@changesets/cli": "^2.18.1",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.11",
     "ts-jest": "^27.0.7",
     "type-coverage": "^2.19.0",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.2"
   },
   "typeCoverage": {
     "atLeast": 100,

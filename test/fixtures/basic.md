@@ -40,6 +40,12 @@ cp /etc/kubernetes/manifests/kube-apiserver.yaml ./kube-apiserver.yaml_backup
 这是面板宏测试
 :::
 
+# 宏：面板
+
+:::panel
+这是面板
+:::
+
 # 宏：页面属性
 
 这是页面属性

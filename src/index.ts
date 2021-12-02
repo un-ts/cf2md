@@ -57,14 +57,16 @@ const processor = unified()
         }
 
         if (classList?.includes('panel') && !classList.includes('code')) {
+          const panelTitle = nodes.find(
+            (node): node is Strong => node.type === 'strong',
+          )
           const panel: ContainerDirective = {
             type: 'containerDirective',
             name: 'panel',
-            attributes: {
-              title: nodes
-                .find((node): node is Strong => node.type === 'strong')!
-                .children.find((node): node is Text => node.type === 'text')!
-                .value,
+            attributes: panelTitle && {
+              title: panelTitle.children.find(
+                (node): node is Text => node.type === 'text',
+              )!.value,
             },
             children: nodes.filter(
               (node): node is Paragraph => node.type === 'paragraph',
