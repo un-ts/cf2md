@@ -1,4 +1,4 @@
-import type { Element } from 'hast'
+import type { Content, Element } from 'hast'
 import { isElement } from 'hast-util-is-element'
 import type { Paragraph, Strong, Text } from 'mdast'
 import type { BlockContent, ContainerDirective } from 'mdast-util-directive'
@@ -20,6 +20,9 @@ const processor = unified()
   .use(remarkGfm)
   .use(rehypeRemark, {
     handlers: {
+      br(h, node: Content) {
+        return h(node, 'html', '<br>')
+      },
       div(h, node: Element) {
         const classList = getClassList(node)
 
@@ -122,6 +125,15 @@ const processor = unified()
               meta: 'expandable',
             }
           : codeNode
+      },
+      strong(h, node: Element) {
+        const strongNode = defaultHandlers.strong(h, node) as Strong
+        for (const child of strongNode.children) {
+          if (child.type === 'text') {
+            child.value = child.value.trim()
+          }
+        }
+        return strongNode
       },
     },
   })
