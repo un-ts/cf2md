@@ -1,5 +1,11 @@
 # cf2md
 
+## 0.3.4
+
+### Patch Changes
+
+- [#17](https://github.com/rx-ts/cf2md/pull/17) [`b07a087`](https://github.com/rx-ts/cf2md/commit/b07a0870c5a178cd625fd7b6a0932db3d977011e) Thanks [@JounQin](https://github.com/JounQin)! - fix: fix <br/> and space in strong temporarily
+
 ## 0.3.3
 
 ### Patch Changes
