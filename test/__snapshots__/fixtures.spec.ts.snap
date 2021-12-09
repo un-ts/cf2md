@@ -73,6 +73,16 @@ cp /etc/kubernetes/manifests/kube-apiserver.yaml ./kube-apiserver.yaml_backup
 
 经验是……
 
+1.  参考以下说明，配置关键参数。
+
+    <br>
+
+    *   **添加告警规则**，并设置 **告警规则**相关参数：
+
+        <br>
+
+        *   **告警类型** 选择 **自定义告警。**
+
 \\\\-end-
 "
 `;
