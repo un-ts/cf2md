@@ -8,7 +8,7 @@ specifiers:
   '@types/node': ^16.11.11
   commander: ^8.3.0
   hast-util-is-element: ^2.1.1
-  rehype-parse: ^8.0.3
+  rehype-parse: ^8.0.4
   rehype-remark: ^9.1.2
   remark-directive: ^2.0.1
   remark-gfm: ^3.0.1
@@ -22,7 +22,7 @@ specifiers:
 dependencies:
   commander: 8.3.0
   hast-util-is-element: 2.1.1
-  rehype-parse: 8.0.3
+  rehype-parse: 8.0.4
   rehype-remark: 9.1.2
   remark-directive: 2.0.1
   remark-gfm: 3.0.1
@@ -9418,8 +9418,8 @@ packages:
       unist-util-is: 5.1.1
     dev: false
 
-  /rehype-parse/8.0.3:
-    resolution: {integrity: sha512-RGw0CVt+0S6KdvpE8bbP2Db9WXclQcIX7A0ufM3QFqAhTo/ddJMQrrI2j3cijlRPZlGK8R3pRgC8U5HyV76IDw==}
+  /rehype-parse/8.0.4:
+    resolution: {integrity: sha512-MJJKONunHjoTh4kc3dsM1v3C9kGrrxvA3U8PxZlP2SjH8RNUSrb+lF7Y0KVaUDnGH2QZ5vAn7ulkiajM9ifuqg==}
     dependencies:
       '@types/hast': 2.3.4
       hast-util-from-parse5: 7.1.0
