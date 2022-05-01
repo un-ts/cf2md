@@ -44,7 +44,7 @@
     "remark-directive": "^2.0.1",
     "remark-gfm": "^3.0.1",
     "remark-stringify": "^10.0.2",
-    "unified": "^10.1.1",
+    "unified": "^10.1.2",
     "unified-stream": "^2.0.0"
   },
   "devDependencies": {
