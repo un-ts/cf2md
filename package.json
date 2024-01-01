@@ -43,7 +43,7 @@
     "rehype-remark": "^9.1.2",
     "remark-directive": "^2.0.1",
     "remark-gfm": "^3.0.1",
-    "remark-stringify": "^10.0.2",
+    "remark-stringify": "^10.0.3",
     "unified": "^10.1.1",
     "unified-stream": "^2.0.0"
   },
